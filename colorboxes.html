@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=div">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Color Boxes | Phran Batson</title>
+    <style>
+        body {
+        background-color: #444444;
+        font-size: 0;
+        }
+        .main {
+            width: 70vw;
+            margin: auto;
+        }
+        .box {
+            display: inline-block;
+            height: 16vw;
+            width: 16vw;
+            background-color: #444444;
+        }
+        .none {
+            display: inline-block;
+            height: 16vw;
+            width: 16vw;
+            background-color: #444444;
+        }
+        .boxgen2{
+            display: inline-block;
+            height: 8vw;
+            width: 8vw;
+        }
+        .none2{
+            display: inline-block;
+            height: 8vw;
+            width: 8vw;
+        }
+        .boxgen3{
+            display: inline-block;
+            height: 4vw;
+            width: 4vw;
+        }
+        .none3{
+            display: inline-block;
+            height: 4vw;
+            width: 4vw;
+        }
+        .boxgen4{
+            display: inline-block;
+            height: 2vw;
+            width: 2vw;
+        }
+        .none4{
+            display: inline-block;
+            height: 2vw;
+            width: 2vw;
+        }
+        .boxgen5{
+            display: inline-block;
+            height: 1vw;
+            width: 1vw;
+        }
+    </style>
+    <script>
+        function changeColor(id)
+        {
+            box = document.getElementById(id);
+            if (box.className == "box") /*(box.className == "box")*/
+            {
+                box.style.backgroundColor = '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
+                str = "";
+                str += "<div class=\"boxgen2\" id=\"" + id +".1\" onmouseover=\"changeColor('" + id +".1')\"></div>";
+                str += "<div class=\"boxgen2\" id=\"" + id +".2\" onmouseover=\"changeColor('" + id +".2')\"></div>";
+                str += "<div class=\"boxgen2\" id=\"" + id +".3\" onmouseover=\"changeColor('" + id +".3')\"></div>";
+                str += "<div class=\"boxgen2\" id=\"" + id +".4\" onmouseover=\"changeColor('" + id +".4')\"></div>";
+
+                box.innerHTML = str;
+
+                document.getElementById(id).className = "none";
+            }
+            else if (box.className == "boxgen2")
+            {
+                box.style.backgroundColor = '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
+                str = "";
+                str += "<div class=\"boxgen3\" id=\"" + id +".1\" onmouseover=\"changeColor('" + id +".1')\"></div>";
+                str += "<div class=\"boxgen3\" id=\"" + id +".2\" onmouseover=\"changeColor('" + id +".2')\"></div>";
+                str += "<div class=\"boxgen3\" id=\"" + id +".3\" onmouseover=\"changeColor('" + id +".3')\"></div>";
+                str += "<div class=\"boxgen3\" id=\"" + id +".4\" onmouseover=\"changeColor('" + id +".4')\"></div>";
+
+                box.innerHTML = str;
+
+                document.getElementById(id).className = "none2";
+            }
+            else if (box.className == "boxgen3")
+            {
+                box.style.backgroundColor = '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
+                str = "";
+                str += "<div class=\"boxgen4\" id=\"" + id +".1\" onmouseover=\"changeColor('" + id +".1')\"></div>";
+                str += "<div class=\"boxgen4\" id=\"" + id +".2\" onmouseover=\"changeColor('" + id +".2')\"></div>";
+                str += "<div class=\"boxgen4\" id=\"" + id +".3\" onmouseover=\"changeColor('" + id +".3')\"></div>";
+                str += "<div class=\"boxgen4\" id=\"" + id +".4\" onmouseover=\"changeColor('" + id +".4')\"></div>";
+
+                box.innerHTML = str;
+
+                document.getElementById(id).className = "none3";
+            }
+            else if (box.className == "boxgen4")
+            {
+                box.style.backgroundColor = '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
+                str = "";
+                str += "<div class=\"boxgen5\" id=\"" + id +".1\" onmouseover=\"changeColor('" + id +".1')\"></div>";
+                str += "<div class=\"boxgen5\" id=\"" + id +".2\" onmouseover=\"changeColor('" + id +".2')\"></div>";
+                str += "<div class=\"boxgen5\" id=\"" + id +".3\" onmouseover=\"changeColor('" + id +".3')\"></div>";
+                str += "<div class=\"boxgen5\" id=\"" + id +".4\" onmouseover=\"changeColor('" + id +".4')\"></div>";
+
+                box.innerHTML = str;
+
+                document.getElementById(id).className = "none4";
+            }
+            else if (box.className == "boxgen5")
+            {
+                box.style.backgroundColor = '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="main">
+    <div class="box" id="box1" onmouseover="changeColor('box1')"></div>
+    <div class="box" id="box2" onmouseover="changeColor('box2')"></div>
+    <div class="box" id="box3" onmouseover="changeColor('box3')"></div>
+    <div class="box" id="box4" onmouseover="changeColor('box4')"></div>
+    <div class="box" id="box5" onmouseover="changeColor('box5')"></div>
+    <div class="box" id="box6" onmouseover="changeColor('box6')"></div>
+    <div class="box" id="box7" onmouseover="changeColor('box7')"></div>
+    <div class="box" id="box8" onmouseover="changeColor('box8')"></div>
+    <div class="box" id="box9" onmouseover="changeColor('box9')"></div>
+    <div class="box" id="box10" onmouseover="changeColor('box10')"></div>
+    <div class="box" id="box11" onmouseover="changeColor('box11')"></div>
+    <div class="box" id="box12" onmouseover="changeColor('box12')"></div>
+    <div class="box" id="box13" onmouseover="changeColor('box13')"></div>
+    <div class="box" id="box14" onmouseover="changeColor('box14')"></div>
+    <div class="box" id="box15" onmouseover="changeColor('box15')"></div>
+    <div class="box" id="box16" onmouseover="changeColor('box16')"></div>
+</div>
+</body>
+</html>
