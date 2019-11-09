@@ -1,0 +1,55 @@
+body {
+    background-color: #444444;
+    font-size: 0;
+    }
+    .main {
+        width: 70vw;
+        margin: auto;
+    }
+    .box {
+        display: inline-block;
+        height: 16vw;
+        width: 16vw;
+        background-color: #444444;
+    }
+    .none {
+        display: inline-block;
+        height: 16vw;
+        width: 16vw;
+        background-color: #444444;
+    }
+    .boxgen2{
+        display: inline-block;
+        height: 8vw;
+        width: 8vw;
+    }
+    .none2{
+        display: inline-block;
+        height: 8vw;
+        width: 8vw;
+    }
+    .boxgen3{
+        display: inline-block;
+        height: 4vw;
+        width: 4vw;
+    }
+    .none3{
+        display: inline-block;
+        height: 4vw;
+        width: 4vw;
+    }
+    .boxgen4{
+        display: inline-block;
+        height: 2vw;
+        width: 2vw;
+    }
+    .none4{
+        display: inline-block;
+        height: 2vw;
+        width: 2vw;
+    }
+    .boxgen5{
+        display: inline-block;
+        height: 1vw;
+        width: 1vw;
+    }
