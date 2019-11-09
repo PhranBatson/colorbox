@@ -1,7 +1,9 @@
 var howManyBoxes = 4;
 
 for (i = 1; i <= howManyBoxes; i++) {
-    document.getElementById("container").innerHTML += "<div class='box' id='num" + i + "'></div>";
+    id = "num" + i;
+    document.getElementById("container").innerHTML += "<div class='box' id='" + id + "'></div>";
+    // document.getElementById(id).addEventListener("mouseover", (event) => { theMouseIsOnMe(event) } );
 }
 
 for (i = 1; i <= howManyBoxes; i++) {
@@ -29,7 +31,6 @@ function stickBoxesInMe(id) {
 
     box.innerHTML = str;
 }
-
 
 function changeColor(id) {
 
